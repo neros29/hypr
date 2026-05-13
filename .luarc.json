@@ -1,0 +1,17 @@
+{
+    "runtime": {
+        "version": "LuaJIT"
+    },
+    "diagnostics": {
+        "globals": [
+            "hl",
+            "vim"
+        ]
+    },
+    "workspace": {
+        "checkThirdParty": false,
+        "library": [
+            "/home/neros/Repos/Hyprland/meta"
+        ]
+    }
+}
