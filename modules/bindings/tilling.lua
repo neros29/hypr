@@ -1,8 +1,8 @@
 -- ===================================================
 --                 Window & Workspace binds
 -- ===================================================
-hl.bind(MainMod .. "+ CTRL + h", hl.dsp.workspace.swap_monitors({ monitor1 = "eDP-2", monitor2 = "DP-1" }))
-hl.bind(MainMod .. "+ CTRL + l", hl.dsp.workspace.swap_monitors({ monitor1 = "HDMI-A-1", monitor2 = "DP-1" }))
+hl.bind(MainMod .. "+ SHIFT + h", hl.dsp.workspace.swap_monitors({ monitor1 = "eDP-2", monitor2 = "DP-1" }))
+hl.bind(MainMod .. "+ SHIFT + l", hl.dsp.workspace.swap_monitors({ monitor1 = "HDMI-A-1", monitor2 = "DP-1" }))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(MainMod .. " + h", hl.dsp.focus({ direction = "left" }), { description = "Move focus left" })
