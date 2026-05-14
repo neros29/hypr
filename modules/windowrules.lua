@@ -24,3 +24,10 @@ hl.window_rule({
 	},
 	opacity = "1 1",
 })
+hl.layer_rule({
+	match = {
+		namespace = "walker",
+	},
+	no_anim = true,
+})
+-- layerrule = match:namespace walker, no_anim on

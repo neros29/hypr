@@ -1,19 +1,9 @@
------------------------
----- LOOK AND FEEL ----
------------------------
-
--- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
---
+require("current-theme")
 hl.config({
 	general = {
 		gaps_in = 3,
 		gaps_out = 6,
 		border_size = 2,
-
-		col = {
-			active_border = { colors = { "rgba(ffffffff)", "rgba(ffffffff)" }, angle = 45 },
-			inactive_border = "rgba(595959aa)",
-		},
 	},
 
 	decoration = {
