@@ -1,1 +1,3 @@
-hl.config({ general = { col = { active_border = "#b4c5ff", inactive_border = "#414659" } } })
+
+hl.config({ general = { col = { active_border = "#adc6ff", inactive_border = "#3f4759" } } })
+        

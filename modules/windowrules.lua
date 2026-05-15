@@ -4,6 +4,7 @@ hl.window_rule({
 	center = true,
 	size = { 875, 600 },
 })
+
 hl.window_rule({
 	match = {
 		class = "(blueberry\\.py|com\\.omarchy\\.Impala|com\\.omarchy\\.Wiremix|com\\.omarchy\\.Omarchy|org\\.gnome\\.NautilusPreviewer|com\\.gabm\\.satty|Omarchy|About|TUI\\.float)",
@@ -24,10 +25,29 @@ hl.window_rule({
 	},
 	opacity = "1 1",
 })
+
 hl.layer_rule({
 	match = {
 		namespace = "walker",
 	},
 	no_anim = true,
 })
--- layerrule = match:namespace walker, no_anim on
+
+-- Picture In Picture
+hl.window_rule({
+	match = { title = "(Picture.?in.?[Pp]icture)" },
+	float = true,
+	tag = "+pip",
+})
+
+hl.window_rule({
+	match = { tag = "pip" },
+	float = true,
+	pin = true,
+	size = { 600, 338 },
+	keep_aspect_ratio = true,
+	border_size = 0,
+	decorate = false,
+	opacity = "1 1",
+	move = "100%-w-40 4%",
+})
