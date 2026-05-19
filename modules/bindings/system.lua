@@ -36,3 +36,8 @@ hl.bind(
 	hl.dsp.exec_cmd("omarchy-launch-walker -m clipboard"),
 	{ description = "Open clipboard history" }
 )
+hl.bind(
+	MainMod .. " + CTRL + e",
+	hl.dsp.exec_cmd("omarchy-launch-walker -m symbols"),
+	{ description = "Open clipboard history" }
+)
