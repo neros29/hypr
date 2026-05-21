@@ -39,5 +39,10 @@ hl.bind(
 hl.bind(
 	MainMod .. " + CTRL + e",
 	hl.dsp.exec_cmd("omarchy-launch-walker -m symbols"),
-	{ description = "Open clipboard history" }
+	{ description = "Open emoji picker" }
+)
+hl.bind(
+	MainMod .. " + CTRL + p",
+	hl.dsp.exec_cmd("pkill hyprpicker || hyprpicker -a"),
+	{ description = "Open color picker" }
 )
