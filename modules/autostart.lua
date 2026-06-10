@@ -32,7 +32,7 @@ hl.on("hyprland.start", function()
 end)
 
 hl.on("hyprland.start", function()
-	hl.exec_cmd("[workspace 2 silent] kitty")
+	hl.exec_cmd("[workspace 2 silent] kitty -1")
 	hl.exec_cmd("[workspace 4 silent] nautilus")
 	hl.exec_cmd("[workspace 7 silent] obsidian")
 	hl.exec_cmd("[workspace 3 silent] firefox")

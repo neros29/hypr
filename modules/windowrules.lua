@@ -44,10 +44,19 @@ hl.window_rule({
 	match = { tag = "pip" },
 	float = true,
 	pin = true,
-	size = { 600, 338 },
+	size = { 700, 394 },
 	keep_aspect_ratio = true,
 	border_size = 0,
 	decorate = false,
 	opacity = "1 1",
 	move = "100%-w-40 4%",
+})
+
+hl.window_rule({
+	match = {
+		class = "com\\.alice\\.Music",
+	},
+	float = true,
+	center = true,
+	size = { 1000, 600 },
 })

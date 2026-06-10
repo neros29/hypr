@@ -46,3 +46,6 @@ hl.bind(
 	hl.dsp.exec_cmd("pkill hyprpicker || hyprpicker -a"),
 	{ description = "Open color picker" }
 )
+hl.bind(MainMod .. "+ CTRL + SHIFT + 0", hl.dsp.dpms({ action = "toggle", monitor = "eDP-2" }))
+hl.bind(MainMod .. "+ CTRL + SHIFT + 1", hl.dsp.dpms({ action = "toggle", monitor = "DP-1" }))
+hl.bind(MainMod .. "+ CTRL + SHIFT + 2", hl.dsp.dpms({ action = "toggle", monitor = "HDMI-A-1" }))
