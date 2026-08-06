@@ -2,10 +2,12 @@
 --                  SYSTEM BINDS
 -- ===================================================
 hl.bind(MainMod .. " + W", hl.dsp.window.close(), { description = "Close window" })
-hl.bind(MainMod .. "+ f", hl.dsp.window.fullscreen(), { description = "Toggle fullscreen" })
+hl.bind(MainMod .. " + CTRL + W", hl.dsp.window.kill(), { description = "Close window" })
+hl.bind(MainMod .. " + f", hl.dsp.window.fullscreen(), { description = "Toggle fullscreen" })
 hl.bind(MainMod .. " + k", hl.dsp.exec_cmd("omarchy-menu-keybindings"), { description = "Open keybind hints" })
 hl.bind(MainMod .. " + ESCAPE", hl.dsp.exec_cmd("omarchy-menu system"), { description = "Open power menu" })
 hl.bind(MainMod .. " + CTRL + SPACE", hl.dsp.global("quickshell:wallpaperpicker"))
+hl.bind(MainMod .. " + F1", hl.dsp.exec_cmd("omarchy-menu power"), { description = "Open power profile menu" })
 hl.bind(
 	MainMod .. " + RETURN",
 	hl.dsp.exec_cmd("python3 ~/.alice/scripts/relitive_commands.py"),
@@ -45,4 +47,9 @@ hl.bind(
 	MainMod .. " + CTRL + p",
 	hl.dsp.exec_cmd("pkill hyprpicker || hyprpicker -a"),
 	{ description = "Open color picker" }
+)
+hl.bind(
+	MainMod .. " + p",
+	hl.dsp.exec_cmd("echo 'cycle pause' | socat - UNIX-CONNECT:/tmp/mpv 2>/dev/null"),
+	{ description = "Play/Pause mpv" }
 )
