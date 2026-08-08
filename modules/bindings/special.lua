@@ -20,3 +20,9 @@ hl.bind(
 	hl.dsp.exec_cmd(osdclient .. " --brightness lower"),
 	{ description = "Raise brightness" }
 )
+
+hl.bind(
+	"XF86AudioPause",
+	hl.dsp.exec_cmd("echo 'cycle pause' | socat - UNIX-CONNECT:/tmp/mpv 2>/dev/null"),
+	{ description = "Play/pause mpv" }
+)
