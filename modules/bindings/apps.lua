@@ -13,4 +13,4 @@ hl.bind(
 	hl.dsp.exec_cmd("bash /home/neros/.config/play-timer/play-timer.sh"),
 	{ description = "Launch Timer" }
 )
-hl.bind(MainMod .. " + SHIFT + M", hl.dsp.exec_cmd("~/Documents/projects/music/run"), { description = "Choose Music" })
+hl.bind(MainMod .. " + SHIFT + M", hl.dsp.exec_cmd("floating-music-launcher"), { description = "Choose Music" })
