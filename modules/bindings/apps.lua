@@ -14,3 +14,8 @@ hl.bind(
 	{ description = "Launch Timer" }
 )
 hl.bind(MainMod .. " + SHIFT + M", hl.dsp.exec_cmd("floating-music-launcher"), { description = "Choose Music" })
+hl.bind(
+	MainMod .. " + SHIFT + e",
+	hl.dsp.exec_cmd("/home/neros/Documents/projects/flashy/run"),
+	{ description = "Open flashy" }
+)

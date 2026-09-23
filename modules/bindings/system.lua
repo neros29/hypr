@@ -34,7 +34,7 @@ hl.bind(
 	{ description = "Take screen shot" }
 )
 hl.bind(
-	MainMod .. " + CTRL + v",
+	MainMod .. " + v",
 	hl.dsp.exec_cmd("omarchy-launch-walker -m clipboard"),
 	{ description = "Open clipboard history" }
 )
@@ -52,4 +52,9 @@ hl.bind(
 	MainMod .. " + p",
 	hl.dsp.exec_cmd("echo 'cycle pause' | socat - UNIX-CONNECT:/tmp/mpv 2>/dev/null"),
 	{ description = "Play/Pause mpv" }
+)
+hl.bind(
+	MainMod .. " + D",
+	hl.dsp.exec_cmd("/home/neros/.alice/bin/date-gen"),
+	{ description = "Copy current date and time to clipboard" }
 )

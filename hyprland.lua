@@ -1,12 +1,18 @@
-require("modules.moniters")
-require("modules.envs")
-require("modules.theme")
-require("modules.bindings")
-require("modules.autostart")
-require("modules.input")
-require("modules.windowrules")
+-------------------------
+---- Hyprland config ----
+-------------------------
+-- This is my hyprland config entry point.
+-- This config is written in the new hyprland lua syntax.
+-- Look in /home/neros/Repos/hyprland-wiki if need to find any info
 
--- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
+require("modules.moniters") -- This if for monitor configurations.
+require("modules.envs") -- This is were i define environment variables
+require("modules.theme") -- This is a generated theme file. Do not touch.
+require("modules.bindings") -- This the entry point for keyboard shortcuts.
+require("modules.autostart") -- This were all the daemons are started
+require("modules.input") -- This is were input configurations such as mouse and keyboard input are.
+require("modules.windowrules") -- This is were windowrules and defined
+
 hl.config({
 	dwindle = {
 		preserve_split = true, -- You probably want this
