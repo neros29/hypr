@@ -3,7 +3,7 @@
 ---------------------
 MainMod = "SUPER" -- Sets "Windows" key as main modifier
 Terminal = "kitty"
-FileManager = "nautilus"
+FileManager = "nautilus --new-window"
 Browser = "firefox"
 
 require("modules.bindings.special") -- This file is were you put wired bindings such as volume, and other wired out of the ordinary bindings.

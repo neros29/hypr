@@ -19,13 +19,6 @@ hl.window_rule({
 	float = true,
 })
 
-hl.window_rule({
-	match = {
-		class = "^(zoom|vlc|mpv|org\\.kde\\.kdenlive|com\\.obsproject\\.Studio|com\\.github\\.PintaProject\\.Pinta|imv|org\\.gnome\\.NautilusPreviewer)$\\.Calculator",
-	},
-	opacity = "1 1",
-})
-
 hl.layer_rule({
 	match = {
 		namespace = "walker",
