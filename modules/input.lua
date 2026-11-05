@@ -12,7 +12,7 @@ hl.config({
 
 		sensitivity = 0,
 		tablet = {
-			output = "DP-1",
+			output = "current",
 		},
 
 		touchpad = {
@@ -20,4 +20,20 @@ hl.config({
 			scroll_factor = 1.5,
 		},
 	},
+})
+hl.gesture({
+	fingers = 3,
+	direction = "vertical",
+	scale = 1.5,
+	action = function()
+		hl.dispatch(hl.dsp.global("quickshell:status"))
+	end,
+})
+hl.gesture({
+	fingers = 3,
+	direction = "right",
+	scale = 1.5,
+	action = function()
+		hl.dispatch(hl.dsp.global("quickshell:jdict"))
+	end,
 })

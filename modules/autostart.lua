@@ -1,3 +1,4 @@
+require("config")
 -------------------
 ---- AUTOSTART ----
 -------------------
@@ -30,10 +31,8 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("wl-paste --type image --watch cliphist store")
 	hl.exec_cmd("bash $ALICE_PATH/scripts/start.sh")
 
-	hl.exec_cmd("kitty", { workspace = "2 silent" })
-	hl.exec_cmd("nautilus", { workspace = "4 silent" })
+	hl.exec_cmd(AliceConfig.Terminal, { workspace = "2 silent" })
+	hl.exec_cmd(AliceConfig.FileManager, { workspace = "4 silent" })
+	hl.exec_cmd(AliceConfig.Browser, { workspace = "3 silent" })
 	hl.exec_cmd("obsidian", { workspace = "7 silent" })
-	hl.exec_cmd("firefox", { workspace = "3 silent" })
-
-	hl.dispatch(hl.dsp.focus({ workspace = 2 }))
 end)
